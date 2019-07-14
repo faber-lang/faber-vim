@@ -16,6 +16,8 @@ syn keyword fabQuantifier forall
 syn keyword fabStatement match with let in where
 syn keyword fabConditional if then else
 
+syn match fabDelimiter  "|\|-\|,"
+
 " Comments
 syn match   fabLineComment      "//*\([^-!#$%&\*\+./<=>\?@\\^|~].*\)\?$" contains=@Spell
 syn region  fabBlockComment     start="/\*"  end="\*/" contains=fabBlockComment,@Spell
@@ -34,3 +36,4 @@ hi def link fabConditional			  Conditional
 hi def link fabComment		  Comment
 hi def link fabBlockComment		  fabComment
 hi def link fabLineComment			  fabComment
+hi def link fabDelimiter Delimiter
