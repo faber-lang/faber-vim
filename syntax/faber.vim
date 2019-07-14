@@ -21,7 +21,7 @@ syn match fabDelimiter  "|\|,\|\(^\s*-\)"
 syn match fabOperator "+\|*\|->\|-\|::\|="
 
 " Comments
-syn match   fabLineComment      "//*\([^-!#$%&\*\+./<=>\?@\\^|~].*\)\?$" contains=@Spell
+syn match   fabLineComment      "//.*" contains=@Spell
 syn region  fabBlockComment     start="/\*"  end="\*/" contains=fabBlockComment,@Spell
 
 " Define the default highlighting.
