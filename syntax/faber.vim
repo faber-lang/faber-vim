@@ -4,7 +4,7 @@ if exists("b:current_syntax")
 endif
 
 syn match fabIdent "\<[a-zA-Z][a-zA-Z0-9_]*\>"
-syn match fabPatCtor "\<#[a-zA-Z][a-zA-Z0-9_]*\>"
+syn match fabPatCtor "#\<[a-zA-Z][a-zA-Z0-9_]*\>"
 
 " and constants
 syn match   fabNumber		"\<\d\+\>"
