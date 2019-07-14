@@ -7,12 +7,12 @@ syn match fabIdent "\<[a-zA-Z][a-zA-Z0-9_]*\>"
 syn match fabPatCtor "\<#[a-zA-Z][a-zA-Z0-9_]*\>"
 
 " and constants
-syn match   fabNumber		"\<\d+\>"
+syn match   fabNumber		"\<\d\+\>"
 
 " Keyword definitions
 syn keyword fabNamedef name
 syn keyword fabTypedef type
-syn keyword fabQantifier forall
+syn keyword fabQuantifier forall
 syn keyword fabStatement match with let in where
 syn keyword fabConditional if then else
 
